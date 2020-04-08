@@ -47,7 +47,11 @@ public class Main {
         System.out.println();
         System.out.println("Long work");
         System.out.println("Max Long " + maxLong );
+        maxLong++;
+        System.out.println("Max Long overflow" + maxLong );
         System.out.println("Min Long " + minLong );
+
+        long num = 2345678912L;
     }
 
     // this method will play with the in data type
