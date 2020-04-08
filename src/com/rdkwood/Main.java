@@ -23,12 +23,20 @@ public class Main {
     // By default the byte data type store numbers in the range -128 to 127
     // using twos integer numbers
     private static void byteDataType() {
+        byte maxByte = Byte.MAX_VALUE;
+        byte minByte = Byte.MIN_VALUE;
 
+        System.out.println("Max Byte = " + maxByte);
+        System.out.println("Min Byte = " + minByte);
     }
 
-    
-    private static void longDataType() {
 
+    private static void longDataType() {
+        long maxLong = Long.MAX_VALUE;
+        long minLong = Long.MIN_VALUE;
+
+        System.out.println("Max Long " + maxLong );
+        System.out.println("Min Long " + minLong );
     }
 
     // this method will play with the in data type
