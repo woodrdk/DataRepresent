@@ -6,7 +6,8 @@ public class Main {
 
         // check our recap anwsers
         // ints have 4 bytes
-
+        System.out.println();
+        System.out.println("Recap answers");
         int data = 0b01100011;
         System.out.println("Base 10 (Decimal Value) is " + data);
 
@@ -25,16 +26,26 @@ public class Main {
     private static void byteDataType() {
         byte maxByte = Byte.MAX_VALUE;
         byte minByte = Byte.MIN_VALUE;
-
+        System.out.println();
+        System.out.println("Byte work");
         System.out.println("Max Byte = " + maxByte);
         System.out.println("Min Byte = " + minByte);
+        System.out.println();
+        // cause overflow
+        maxByte++;
+        System.out.println(Integer.toBinaryString(maxByte));
+
+
     }
 
-
+    // by default it uses 8 bytes to store the integer using twos complement
+    // MSB at the sign of the number 1- means neg 0- positive
+    // Initialize a long with a number greater than max int then you need to add L at the end of number
     private static void longDataType() {
         long maxLong = Long.MAX_VALUE;
         long minLong = Long.MIN_VALUE;
-
+        System.out.println();
+        System.out.println("Long work");
         System.out.println("Max Long " + maxLong );
         System.out.println("Min Long " + minLong );
     }
@@ -44,7 +55,8 @@ public class Main {
     public static void intDataType(){
         int max = Integer.MAX_VALUE;
         int min = Integer.MIN_VALUE;
-
+        System.out.println();
+        System.out.println("Integer work");
         System.out.println("Max int: " + max);
         System.out.println("Min int: " + min);
 
